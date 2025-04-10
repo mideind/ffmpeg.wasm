@@ -1,3 +1,16 @@
+# This fork
+This fork compiles a minimal version of FFmpeg to include in a web browser (wasm).
+The minimal build includes no codecs but supports all formats, allowing for probing and extracting streams with `copy`.
+
+The main changes of this fork:
+- `Dockerfile` disable all codecs, unnecessary builders and `esm` build.
+- `ffmpeg-wasm.sh` remove link libraries
+
+Building (using `make prd`, set to `-O3`) builds two binaries `packages/core/dist/umd/{ffmpeg-core.wasm,ffmpeg-core.wasm}`.
+The `wasm` binary is roughly 3.8MB in size.
+
+These binaries can be loaded using the `@ffmpeg/ffmpeg` package and served by the web server.
+
 This project is looking for maintainers. If you are interested to give it a go, please email [me](mailto:jeromewus@gmail.com) to further discuss maintenance.
 
 ---
