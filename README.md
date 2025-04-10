@@ -11,6 +11,8 @@ The `wasm` binary is roughly 3.8MB in size.
 
 These binaries can be loaded using the `@ffmpeg/ffmpeg` package and served by the web server.
 
+---
+
 This project is looking for maintainers. If you are interested to give it a go, please email [me](mailto:jeromewus@gmail.com) to further discuss maintenance.
 
 ---
